@@ -1,0 +1,49 @@
+:root {
+    --light: #ebe5c2;
+    --light-op: #ebe5c230;
+    --dark: #1b3152;
+    --dark-op: #1b315220;
+    --black: #000;
+    --white: #fff;
+    --danger: red;
+    --success: #3ab03a;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    justify-content: center;
+    max-width: 90vw;
+    margin: auto;
+    background: var(--light);
+    color: var(--dark);
+}
+
+.tA-light{
+    color: var(--dark) !important;
+}
+
+.tA-dark{
+    color: var(--light) !important;
+}
+
+.tAb-light{
+    background: var(--light) !important;
+    border: 3px solid var(--dark-op);
+}
+
+.tAb-dark{
+    background: var(--dark) !important;
+    border: 3px solid var(--light-op);
+}
+
+.tAe-light{
+    background: var(--light) !important;
+}
+
+.tAe-dark{
+    background: var(--dark) !important;
+}
