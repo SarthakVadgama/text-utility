@@ -1,7 +1,7 @@
 :root {
-    --light: #ebe5c2;
-    --light-op: #ebe5c230;
-    --dark: #1b3152;
+    --light: #ebde98;
+    --light-op: #e6c2eb30;
+    --dark: #3d005a;
     --dark-op: #1b315220;
     --black: #000;
     --white: #fff;
@@ -22,6 +22,14 @@ body {
     color: var(--dark);
 }
 
+.tAo-light{
+    color: var(--light) !important;
+}
+
+.tAo-dark{
+    color: var(--dark) !important;
+}
+
 .tA-light{
     color: var(--dark) !important;
 }
@@ -37,6 +45,16 @@ body {
 
 .tAb-dark{
     background: var(--dark) !important;
+    border: 3px solid var(--light-op);
+}
+
+.tAbo-light{
+    background: var(--dark) !important;
+    border: 3px solid var(--dark-op);
+}
+
+.tAbo-dark{
+    background: var(--light) !important;
     border: 3px solid var(--light-op);
 }
 

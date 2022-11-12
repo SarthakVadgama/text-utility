@@ -1,6 +1,5 @@
 import React from 'react'
 import "bootstrap-icons/font/bootstrap-icons.css";
-import ContactME from './ContactME';
 
 export default function Contact() {
 
@@ -17,8 +16,7 @@ export default function Contact() {
   }
 
   return (
-    <div>
-      <ContactME />
+    <>
       <div className="container wpnav">
         <h1 className='text-center' style={{ fontSize: '80px' }}>Contact Me</h1>
         <div className="container my-5 text-center d-grid gap-3">
@@ -36,6 +34,6 @@ export default function Contact() {
           </button>
         </div>
       </div>
-    </div>
+    </>
   )
 }

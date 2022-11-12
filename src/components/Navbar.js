@@ -18,6 +18,9 @@ export default function Navbar(props) {
                         <NavLink className="nav-link" activeclassName='active' aria-current="page" to="/t-u">Text-Util</NavLink>
                     </li>
                     <li className='nav-item'>
+                        <NavLink className="nav-link" activeclassName='active' aria-current="page" to="/to-do">ToDo</NavLink>
+                    </li>
+                    <li className='nav-item'>
                         <NavLink className="nav-link" activeclassName='active' aria-current="page" to="/about">About</NavLink>
                     </li>
                     <li className='nav-item'>

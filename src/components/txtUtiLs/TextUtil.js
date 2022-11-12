@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import '../css/index.css'
-import '../css/textUtil.css'
+import '../../css/index.css'
+import '../../css/textUtil.css'
 
 export default function TextUtil(props) {
 

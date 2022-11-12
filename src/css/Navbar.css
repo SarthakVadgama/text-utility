@@ -4,6 +4,7 @@ nav{
     min-height: 85px;
     /* max-width: 95vw; */
     display: flex;
+    position: sticky;
     justify-content: space-between;
     border-bottom: 2px solid var(--dark-op);
 }

@@ -3,7 +3,8 @@ import Navbar from "./components/Navbar";
 import Welpage from "./components/Welpage";
 import About from "./components/About";
 import Contact from "./components/Contact";
-import TextUtil from "./components/TextUtil";
+import TextUtil from "./components/txtUtiLs/TextUtil";
+import ToDo from "./components/toDoList/todo";
 import Alert from "./components/Alert";
 import './css/index.css'
 import './css/Navbar.css'
@@ -59,6 +60,7 @@ function App() {
           <Route exact path="/t-u" element={<TextUtil heading="Text-Utility" showAlert={showAlert} mode={mode} />} />
           <Route exact path="/about" element={<About />} />
           <Route exact path="/contact" element={<Contact />} />
+          <Route exact path="/to-do" element={<ToDo mode={mode} showAlert={showAlert}/>} />
         </Routes>
       </Router>
     </>
