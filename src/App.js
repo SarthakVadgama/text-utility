@@ -6,6 +6,7 @@ import Contact from "./components/Contact";
 import TextUtil from "./components/txtUtiLs/TextUtil";
 import ToDo from "./components/toDoList/todo";
 import Alert from "./components/Alert";
+import Home from "./components/Home";
 import './css/index.css'
 import './css/Navbar.css'
 import './css/welpage.css'
@@ -57,6 +58,7 @@ function App() {
         <Alert alert={alert} />
         <Routes>
           <Route exact path="/" element={<Welpage />} />
+          <Route exact path="/home" element={<Home />} />
           <Route exact path="/t-u" element={<TextUtil heading="Text-Utility" showAlert={showAlert} mode={mode} />} />
           <Route exact path="/about" element={<About />} />
           <Route exact path="/contact" element={<Contact />} />

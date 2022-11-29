@@ -4,7 +4,7 @@ function TableBody(props) {
     const ftems = props.items
     const setftems = props.setItems
 
-    const DeleteIteM = (id) => {
+    const DeleteIteM = (id) => { 
         console.log(id);
         const updateditems = ftems.filter((elem, ind) => {
             props.showAlert("Todo Item deleted successfully", "danger")

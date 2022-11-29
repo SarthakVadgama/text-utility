@@ -14,11 +14,14 @@ export default function Navbar(props) {
                     </div>
                 </Link>
                 <ul>
-                    <li className='nav-item'>
+                    {/* <li className='nav-item'>
                         <NavLink className="nav-link" activeclassName='active' aria-current="page" to="/t-u">Text-Util</NavLink>
                     </li>
                     <li className='nav-item'>
                         <NavLink className="nav-link" activeclassName='active' aria-current="page" to="/to-do">ToDo</NavLink>
+                    </li> */}
+                    <li className='nav-item'>
+                        <NavLink className="nav-link" activeclassName='active' aria-current="page" to="/home">Home</NavLink>
                     </li>
                     <li className='nav-item'>
                         <NavLink className="nav-link" activeclassName='active' aria-current="page" to="/about">About</NavLink>
