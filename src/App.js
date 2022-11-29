@@ -60,7 +60,7 @@ function App() {
         <Routes>
           <Route exact path="/" element={<Welpage />} />
           <Route exact path="/home" element={<Home mode={mode}/>} />
-          <Route exact path="/ranPass" element={<RanPassGen />} />
+          <Route exact path="/ranPass" element={<RanPassGen showAlert={showAlert}/>} />
           <Route exact path="/t-u" element={<TextUtil heading="Text-Utility" showAlert={showAlert} mode={mode} />} />
           <Route exact path="/about" element={<About />} />
           <Route exact path="/contact" element={<Contact />} />
