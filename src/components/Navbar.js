@@ -10,7 +10,7 @@ export default function Navbar(props) {
             <nav id='nanav'>
                 <Link className='yo' id='logo' to='/'>
                     <div className="logo">
-                        <h2>Text-Utils</h2>
+                        <h2>Student-Utils</h2>
                     </div>
                 </Link>
                 <ul>

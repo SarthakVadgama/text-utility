@@ -8,8 +8,8 @@ export default function Welpage() {
     <div>
       <div className="container wpnav" id='wpnav'>
         <center>
-          <h1 className="my-5" style={{ fontSize: '80px' }}>Welcome to Text Utility</h1>
-          <h3>To use the utility function switch to Text-Util from the navigation bar or <br /> <Link to='/t-u'>Click Me</Link> .</h3>
+          <h1 className="my-5" style={{ fontSize: '80px' }}>Welcome to Students-Util</h1>
+          <h3>To explore the tools or utilities available head to home page or <br /> <Link to='/home'>Click Me</Link> .</h3>
         </center>
       </div>
     </div>
