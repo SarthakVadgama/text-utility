@@ -7,6 +7,7 @@ import TextUtil from "./components/txtUtiLs/TextUtil";
 import ToDo from "./components/toDoList/todo";
 import Alert from "./components/Alert";
 import Home from "./components/Home";
+import RanPassGen from "./components/PassGen/RanPassGen";
 import './css/index.css'
 import './css/Navbar.css'
 import './css/welpage.css'
@@ -59,6 +60,7 @@ function App() {
         <Routes>
           <Route exact path="/" element={<Welpage />} />
           <Route exact path="/home" element={<Home mode={mode}/>} />
+          <Route exact path="/ranPass" element={<RanPassGen />} />
           <Route exact path="/t-u" element={<TextUtil heading="Text-Utility" showAlert={showAlert} mode={mode} />} />
           <Route exact path="/about" element={<About />} />
           <Route exact path="/contact" element={<Contact />} />
