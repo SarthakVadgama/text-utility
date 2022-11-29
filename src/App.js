@@ -58,7 +58,7 @@ function App() {
         <Alert alert={alert} />
         <Routes>
           <Route exact path="/" element={<Welpage />} />
-          <Route exact path="/home" element={<Home />} />
+          <Route exact path="/home" element={<Home mode={mode}/>} />
           <Route exact path="/t-u" element={<TextUtil heading="Text-Utility" showAlert={showAlert} mode={mode} />} />
           <Route exact path="/about" element={<About />} />
           <Route exact path="/contact" element={<Contact />} />
