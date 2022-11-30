@@ -7,10 +7,10 @@ export default function Card(props) {
         <div class={`card p-1 mt-4 mx-3 tAo-${props.mode} tAbo-${props.mode}`} style={{ width: "20rem" }}>
             <img src={props.imgli} class="card-img-top" alt="..." />
             <div class="card-body">
-                <h5 class="card-title">{props.title}</h5>
+                <h5 class="card-title">{props.title} <i class={`${props.icon}`}></i></h5>
                 <p class="card-text">{props.desc}</p>
                 <Link className='yo' id='logo' to={props.link}>
-                    <button className='btn btn-primary'>Try-it</button>
+                    <button className={`btn tAb-${props.mode} tA-${props.mode}`}><i class="bi bi-brush me-2"></i> Try-it</button>
                 </Link>
             </div>
         </div>

@@ -86,32 +86,34 @@ export default function RanPassGen(props) {
   }
 
   return (
-    <div className='container justify-content-center p-5'>
-      <center>
+    <>
+      <div className={`container justify-content-center p-5 tA-${props.mode} tAbRP-${props.mode}`}>
+        <h3 className='mb-5'>Random Password Generator</h3>
+        <center>
 
-        <div className='generator__password'>
-          <h2>{password}  <button onClick={handleCopyPassword} className={`copy__btn btn tAo-${props.mode} tAbo-${props.mode}`}>
-            <i class="bi bi-clipboard-check-fill"></i> Copy
-          </button></h2>
-          
-        </div>
+          <div className='generator__password'>
+            <h3>{password}  <button onClick={handleCopyPassword} className={`copy__btn btn tAo-${props.mode} tAbo-${props.mode}`}>
+              <i class="bi bi-clipboard-check-fill"></i> Copy
+            </button></h3>
 
-        <div className='form-group w-50 fs-5'>
-          <label htmlFor='password-strength' className='form-label mt-3'>Password length</label>
-          <input
-            defaultValue={passwordLength}
-            onChange={(e) => setPasswordLength(e.target.value)}
-            type='number'
-            id='password-strength'
-            name='password-strength'
-            className='form-control mb-3'
-            style={{ width: "5rem" }}
-            max='20'
-            min='10'
-          />
-        </div>
+          </div>
 
-        {/* <div className='form-check m-2 w-25 fs-5'>
+          <div className='form-group w-50 fs-5'>
+            <label htmlFor='password-strength' className='form-label mt-3'>Password length</label>
+            <input
+              defaultValue={passwordLength}
+              onChange={(e) => setPasswordLength(e.target.value)}
+              type='number'
+              id='password-strength'
+              name='password-strength'
+              className='form-control mb-3'
+              style={{ width: "5rem" }}
+              max='20'
+              min='10'
+            />
+          </div>
+
+          {/* <div className='form-check m-2 w-25 fs-5'>
           <label htmlFor='uppercase-letters' className='form-check-label'>Include Uppercase Letters</label>
           <input
             checked={includeUppercase}
@@ -159,11 +161,12 @@ export default function RanPassGen(props) {
           />
         </div> */}
 
-        <button onClick={handleGeneratePassword} className={`generator__btn btn tAo-${props.mode} tAbo-${props.mode}`}>
-          Generate Password
-        </button>
-        < TableBody items={items} setItems={setItems} mode={props.mode} showAlert={props.showAlert} />
-      </center>
-    </div>
+          <button onClick={handleGeneratePassword} className={`generator__btn btn tAo-${props.mode} tAbo-${props.mode}`}>
+            <i class="bi bi-wrench"></i>  - Generate Password
+          </button>
+        </center>
+      </div>
+      < TableBody items={items} setItems={setItems} mode={props.mode} showAlert={props.showAlert} />
+    </>
   )
 }
