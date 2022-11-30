@@ -1,6 +1,5 @@
 import React from 'react'
 import '../css/index.css'
-import '../css/welpage.css'
 import Card from './Card'
 
 export default function Home(props) {
