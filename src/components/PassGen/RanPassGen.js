@@ -72,6 +72,7 @@ export default function RanPassGen(props) {
     navigator.clipboard.writeText(newTextArea.value);
     props.showAlert("Text copied successfully", "success");
     setItems([...items, password])
+    password('Random Password appears Here')
   }
   useEffect(() => {
     localStorage.setItem('passes', JSON.stringify(items))
@@ -87,7 +88,7 @@ export default function RanPassGen(props) {
 
   return (
     <>
-      <div className={`container justify-content-center p-5 tA-${props.mode} tAbRP-${props.mode}`}>
+      <div className={`container justify-content-center my-5 py-5 tA-${props.mode} tAbRP-${props.mode}`}>
         <h3 className='mb-5'>Random Password Generator</h3>
         <center>
 

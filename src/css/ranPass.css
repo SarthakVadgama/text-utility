@@ -1,9 +1,11 @@
 .tAbRP-dark{
     background: var(--dark) !important;
     border-bottom: 2px solid var(--light-op);
+    border-top: 2px solid var(--light-op);
 }
 
 .tAbRP-light{
     background: var(--light) !important;
     border-bottom: 2px solid var(--dark-op);
+    border-top: 2px solid var(--dark-op);
 }
