@@ -7,6 +7,7 @@ import TextUtil from "./components/txtUtiLs/TextUtil";
 import ToDo from "./components/toDoList/todo";
 import Alert from "./components/Alert";
 import Home from "./components/Home";
+import Contests from "./components/contests/Contests";
 import RanPassGen from "./components/PassGen/RanPassGen";
 import './css/index.css'
 import './css/Navbar.css'
@@ -64,6 +65,7 @@ function App() {
           <Route exact path="/t-u" element={<TextUtil heading="Text-Utility" showAlert={showAlert} mode={mode} />} />
           <Route exact path="/about" element={<About />} />
           <Route exact path="/contact" element={<Contact />} />
+          <Route exact path="/contests" element={<Contests mode={mode} />} />
           <Route exact path="/to-do" element={<ToDo mode={mode} showAlert={showAlert}/>} />
         </Routes>
       </Router>
