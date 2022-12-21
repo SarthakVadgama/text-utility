@@ -31,11 +31,11 @@ function Todo(props) {
         <>
             <div className="container my-4 p-3">
                 <h2>Add Todo's</h2>
-                <div class="mb-3">
-                    <textarea class={`form-control tA-${props.mode} tAb-${props.mode}`} id="mainTodo" value={inputData} onChange={(e) => setInputData(e.target.value)} rows="2"></textarea>
+                <div className="mb-3">
+                    <textarea className={`form-control tA-${props.mode} tAb-${props.mode}`} id="mainTodo" value={inputData} onChange={(e) => setInputData(e.target.value)} rows="2"></textarea>
                 </div>
                 <div>
-                    <button type="submit" class="btn btn-primary mb-3" onClick={addItem}>Add Todo</button>
+                    <button type="submit" className="btn btn-primary mb-3" onClick={addItem}>Add Todo</button>
                 </div>
             < TableBody items={items} setItems={setItems} mode={props.mode} showAlert={props.showAlert} />
             </div>

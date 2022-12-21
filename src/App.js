@@ -61,12 +61,12 @@ function App() {
         <Routes>
           <Route exact path="/" element={<Welpage />} />
           <Route exact path="/home" element={<Home mode={mode}/>} />
-          <Route exact path="/ranPass" element={<RanPassGen mode={mode} showAlert={showAlert}/>} />
-          <Route exact path="/t-u" element={<TextUtil heading="Text-Utility" showAlert={showAlert} mode={mode} />} />
           <Route exact path="/about" element={<About />} />
           <Route exact path="/contact" element={<Contact />} />
-          <Route exact path="/contests" element={<Contests mode={mode} />} />
-          <Route exact path="/to-do" element={<ToDo mode={mode} showAlert={showAlert}/>} />
+          <Route exact path="/tools/ranPass" element={<RanPassGen mode={mode} showAlert={showAlert}/>} />
+          <Route exact path="/tools/t-u" element={<TextUtil heading="Text-Utility" showAlert={showAlert} mode={mode} />} />
+          <Route exact path="/tools/to-do" element={<ToDo mode={mode} showAlert={showAlert}/>} />
+          <Route exact path="/tools/contests" element={<Contests mode={mode} />} />
         </Routes>
       </Router>
     </>

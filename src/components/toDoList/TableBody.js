@@ -20,10 +20,10 @@ function TableBody(props) {
                     {
                         ftems.map((elem, ind) => {
                             return (
-                                <div class={`card m-3 tAo-${props.mode} tAbo-${props.mode}`} style={{ width: "35rem" }}>
-                                    <div class="card-body">
-                                        <h5 class="card-title fs-6">Todo Number : <strong>{ind + 1}</strong></h5>
-                                        <p class="card-text fs-4">{elem}</p>
+                                <div className={`card m-3 tAo-${props.mode} tAbo-${props.mode}`} style={{ width: "35rem" }}>
+                                    <div className="card-body">
+                                        <h5 className="card-title fs-6">Todo Number : <strong>{ind + 1}</strong></h5>
+                                        <p className="card-text fs-4">{elem}</p>
                                         <button className='btn btn-danger' onClick={() => DeleteIteM(ind)}>Delete</button>
                                     </div>
                                 </div>

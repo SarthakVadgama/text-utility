@@ -21,18 +21,18 @@ export default function Navbar(props) {
                         <NavLink className="nav-link" activeclassName='active' aria-current="page" to="/to-do">ToDo</NavLink>
                     </li> */}
                     <li className='nav-item'>
-                        <NavLink className="nav-link" activeclassName='active' aria-current="page" to="/home">Home</NavLink>
+                        <NavLink className="nav-link" activeclassname='active' aria-current="page" to="/home">Home</NavLink>
                     </li>
                     <li className='nav-item'>
-                        <NavLink className="nav-link" activeclassName='active' aria-current="page" to="/about">About</NavLink>
+                        <NavLink className="nav-link" activeclassname='active' aria-current="page" to="/about">About</NavLink>
                     </li>
                     <li className='nav-item'>
-                        <NavLink className="nav-link" activeclassName='active' aria-current="page" to="/contact">Contact</NavLink>
+                        <NavLink className="nav-link" activeclassname='active' aria-current="page" to="/contact">Contact</NavLink>
                     </li>
                 </ul>
-                <div class={`form-check form-switch t t-${props.mode === 'light' ? 'dark' : 'light'}`}>
+                <div className={`form-check form-switch t t-${props.mode === 'light' ? 'dark' : 'light'}`}>
                     <input className="form-check-input" type="checkbox" onClick={props.toggleMode} role="switch" id="flexSwitchCheckDefault" />
-                    <i class="bi bi-moon-stars-fill mx-3"></i>
+                    <i className="bi bi-moon-stars-fill mx-3"></i>
                     <label className="form-check-label mx-2" htmlFor="flexSwitchCheckDefault">DarkMode</label>
                 </div>
             </nav>
