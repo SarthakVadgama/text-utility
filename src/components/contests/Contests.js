@@ -50,7 +50,6 @@ function Contests(props) {
                 const responseJson = await response.json();
                 const data = (responseJson);
                 setContData(data);
-                console.log(data)
             } catch (err) {
                 console.error(err);
             }
@@ -61,10 +60,7 @@ function Contests(props) {
     return (
         <>
             <div className="container my-5">
-                
-                    {/* <ContTab key={element.url} mode={props.mode} title={element.name} STime={element.start_time} ETime={element.end_time} Stat={element.status} STurl={element.url} /> */}
-                    <ContTab mode={props.mode} contData={contData} setContData={setContData} />
-                
+                <ContTab mode={props.mode} contData={contData} setContData={setContData} />
             </div>
         </>
     )

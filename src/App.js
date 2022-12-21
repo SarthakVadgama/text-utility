@@ -40,7 +40,7 @@ function App() {
       document.body.style.color = 'var(--light)';
       navBar.style.color = 'var(--light)';
       nAv.style.borderBottom = '2px solid var(--light-op)';
-      document.getElementById('TextArea1').style.backgroundColor = 'var(--dark)';
+      // document.getElementById('TextArea1').style.backgroundColor = 'var(--dark)';
     }
     else {
       setMode('light');
@@ -49,7 +49,7 @@ function App() {
       document.body.style.color = 'var(--dark)';
       navBar.style.color = 'var(--dark)';
       nAv.style.borderBottom = '2px solid var(--dark-op)';
-      document.getElementById('TextArea1').style.backgroundColor = 'var(--light)';
+      // document.getElementById('TextArea1').style.backgroundColor = 'var(--light)';
     }
   }
 
