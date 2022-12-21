@@ -8,7 +8,7 @@ export default function Navbar(props) {
     return (
         <div className={`t-${props.mode} tb-${props.mode}`}>
             <nav id='nanav'>
-                <Link className='yo' id='logo' to='/'>
+                <Link className='yo' id='logo' to='/home'>
                     <div className="logo">
                         <h2>Student-Utils</h2>
                     </div>
