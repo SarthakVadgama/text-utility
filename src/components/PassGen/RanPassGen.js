@@ -43,7 +43,11 @@ export default function RanPassGen(props) {
       characterList = characterList + specialCharacters
     }
 
-    setPassword(createPassword(characterList))
+    if(passwordLength>=10 && passwordLength<=20){
+      setPassword(createPassword(characterList));
+    }else{
+      props.showAlert("Password length selected mst be between 10 - 20", "danger");
+    }
   }
   const createPassword = (characterList) => {
     let password = ''
@@ -88,7 +92,7 @@ export default function RanPassGen(props) {
 
   return (
     <>
-      <div className={`container justify-content-center my-5 py-5 tA-${props.mode} tAbRP-${props.mode}`}>
+      <div className={`container justify-content-center mb-5 pb-5 pt-3 tA-${props.mode} tAbRP-${props.mode}`}>
         <h3 className='mb-5'>Random Password Generator</h3>
         <center>
 

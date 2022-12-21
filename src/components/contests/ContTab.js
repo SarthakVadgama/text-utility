@@ -17,12 +17,12 @@ function ContTab(props) {
                                     <h5 className={`card-title tAo-${props.mode} fs-4`}>{element.name}</h5>
                                 </div>
                                 <ul className="list-group list-group-flush ">
-                                    <li className={`list-group-item tAo-${props.mode} tAbo-${props.mode}`}>Start at: {element.start_time}</li>
-                                    <li className={`list-group-item tAo-${props.mode} tAbo-${props.mode}`}>Ends at: {element.end_time}</li>
-                                    <li className={`list-group-item tAo-${props.mode} tAbo-${props.mode}`}>Status: {element.status}</li>
+                                    <li className={`list-group-item tAo-${props.mode} tAbo-${props.mode}`}>Start : Date: {element.start_time.slice(0, 10)} , Time: {element.start_time.slice(11, 16)}</li>
+                                    <li className={`list-group-item tAo-${props.mode} tAbo-${props.mode}`}>Ends : Date: {element.end_time.slice(0,10)} , Time: {element.start_time.slice(11, 16)}</li>
+                                    <li className={`list-group-item tAo-${props.mode} tAbo-${props.mode}`}>Status : {element.status}</li>
                                 </ul>
                                 <div className="card-body text-center">
-                                    <a href={element.url} target="_blank" type="button" className={`btn tAb-${props.mode} tA-${props.mode}`}>Click to visit Site</a>
+                                    <a href={element.url} target="_blank" type="button" className={`btn tAe-${props.mode} tA-${props.mode}`}>Click to visit Site</a>
                                 </div>
                             </div>
                         )

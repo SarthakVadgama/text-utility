@@ -10,7 +10,7 @@ export default function Card(props) {
                 <h5 class="card-title">{props.title} <i class={`${props.icon}`}></i></h5>
                 <p class="card-text fs-6">{props.desc}</p>
                 <Link className='yo' id='logo' to={props.link}>
-                    <button className={`btn tAb-${props.mode} tA-${props.mode}`}><i class="bi bi-brush me-2"></i> Try-it</button>
+                    <button className={`btn tAe-${props.mode} tA-${props.mode}`}><i class="bi bi-brush me-2"></i> Try-it</button>
                 </Link>
             </div>
         </div>

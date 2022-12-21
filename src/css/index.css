@@ -40,12 +40,12 @@ body {
 
 .tAb-light{
     background: var(--light) !important;
-    /* border: 3px solid var(--dark-op); */
+    border: 3px solid var(--dark-op);
 }
 
 .tAb-dark{
     background: var(--dark) !important;
-    /* border: 3px solid var(--light-op); */
+    border: 3px solid var(--light-op);
 }
 
 .tAbo-light{

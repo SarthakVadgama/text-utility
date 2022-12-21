@@ -60,6 +60,7 @@ function Contests(props) {
     return (
         <>
             <div className="container my-5">
+                <h3 className='mb-3'>Upcoming coding Contests</h3>
                 <ContTab mode={props.mode} contData={contData} setContData={setContData} />
             </div>
         </>
