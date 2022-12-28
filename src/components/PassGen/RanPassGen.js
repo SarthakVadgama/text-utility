@@ -43,9 +43,9 @@ export default function RanPassGen(props) {
       characterList = characterList + specialCharacters
     }
 
-    if(passwordLength>=10 && passwordLength<=20){
+    if (passwordLength >= 10 && passwordLength <= 20) {
       setPassword(createPassword(characterList));
-    }else{
+    } else {
       props.showAlert("Password length selected mst be between 10 - 20", "danger");
     }
   }
@@ -117,55 +117,6 @@ export default function RanPassGen(props) {
               min='10'
             />
           </div>
-
-          {/* <div className='form-check m-2 w-25 fs-5'>
-          <label htmlFor='uppercase-letters' className='form-check-label'>Include Uppercase Letters</label>
-          <input
-            checked={includeUppercase}
-            onChange={(e) => setIncludeUppercase(e.target.checked)}
-            type='checkbox'
-            id='uppercase-letters'
-            name='uppercase-letters'
-            className='form-check-input'
-          />
-        </div>
-
-        <div className='form-check m-2 w-25 fs-5'>
-          <label htmlFor='lowercase-letters' className='form-check-label'>Include Lowercase Letters</label>
-          <input
-            checked={includeLowercase}
-            onChange={(e) => setIncludeLowercase(e.target.checked)}
-            type='checkbox'
-            id='lowercase-letters'
-            name='lowercase-letters'
-            className='form-check-input'
-          />
-        </div>
-
-        <div className='form-check m-2 w-25 fs-5'>
-          <label htmlFor='include-numbers' className='form-check-label'>Include Numbers</label>
-          <input
-            checked={includeNumbers}
-            onChange={(e) => setIncludeNumbers(e.target.checked)}
-            type='checkbox'
-            id='include-numbers'
-            name='include-numbers'
-            className='form-check-input'
-          />
-        </div>
-
-        <div className='form-check m-2 mb-3 w-25 fs-5'>
-          <label htmlFor='include-symbols' className='form-check-label'>Include Symbols</label>
-          <input
-            checked={includeSymbols}
-            onChange={(e) => setIncludeSymbols(e.target.checked)}
-            type='checkbox'
-            id='include-symbols'
-            name='include-symbols'
-            className='form-check-input'
-          />
-        </div> */}
-
           <button onClick={handleGeneratePassword} className={`generator__btn btn tAo-${props.mode} tAbo-${props.mode}`}>
             <i class="bi bi-wrench"></i>  - Generate Password
           </button>

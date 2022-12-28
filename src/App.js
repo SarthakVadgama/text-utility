@@ -9,6 +9,7 @@ import Alert from "./components/Alert";
 import Home from "./components/Home";
 import Contests from "./components/contests/Contests";
 import RanPassGen from "./components/PassGen/RanPassGen";
+import Activity from "./components/boredAPI/Activity";
 import './css/index.css'
 import './css/Navbar.css'
 import './css/welpage.css'
@@ -67,6 +68,7 @@ function App() {
           <Route exact path="/tools/t-u" element={<TextUtil heading="Text-Utility" showAlert={showAlert} mode={mode} />} />
           <Route exact path="/tools/to-do" element={<ToDo mode={mode} showAlert={showAlert}/>} />
           <Route exact path="/tools/contests" element={<Contests mode={mode} />} />
+          <Route exact path="/tools/feeling-bored" element={<Activity mode={mode} showAlert={showAlert} />} />
         </Routes>
       </Router>
     </>

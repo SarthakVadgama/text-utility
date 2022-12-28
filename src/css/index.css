@@ -30,6 +30,16 @@ body {
     color: var(--dark) !important;
 }
 
+.tAol-light{
+    color: var(--light) !important;
+    opacity: 0.6;
+}
+
+.tAol-dark{
+    color: var(--dark) !important;
+    opacity: 0.6;
+}
+
 .tA-light{
     color: var(--dark) !important;
 }
